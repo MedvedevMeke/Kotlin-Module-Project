@@ -1,5 +1,18 @@
+import java.util.Scanner
 fun main() {
-    // ваш код начнется здесь
-    // вы не должны ограничиваться только классом Main и можете создавать свои классы по необходимости
     println("Привет")
+
+    val archivesList : MutableList<Archives> = mutableListOf()
+
+    print(MenuEnum.MAINMENU.menuScreen)
+    val usersChoise = Scanner(System.`in`)
+
+    while(true){
+        when(usersChoise.nextLine()){
+            "1" -> HelpClass.helperLmao.chooseArchive(archivesList)
+            "2" -> HelpClass.helperLmao.createArchive(archivesList)
+            "0" -> {print("Выход из программы..."); break}
+            else -> print("Введите корректный номер операции: ")
+        }
+    }
 }
