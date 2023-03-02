@@ -3,3 +3,4 @@ enum class MenuEnum (val menuScreen: String){
     ARCHIVESELECT("1. Создать заметку \n2. Выбор заметки \n0. Назад\n"),
     EMPTYARCHIVESELECT("1. Создать заметку \n0. Назад\n")
 }
+//upd

@@ -32,3 +32,4 @@ class Archives (val name: String, var notes: MutableList<String> = mutableListOf
         return true
     }
 }
+//upd
